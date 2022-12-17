@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа с формами</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="" id="myForm">
+        <div class="row">
+            Имя <br>
+            <input type="text" name="name">
+        </div>
+        <div class="row">
+            Фамилия <br>
+            <input type="text" name="lastName">
+        </div>
+        <div class="row">
+            Пол <br>
+            <select name="gender">
+                <option value="man">Мужской</option>
+                <option value="woman">Женский</option>
+            </select>
+        </div>
+        <div class="row">
+            <label><input type="checkbox" name="auto">Наличие авто</label>
+        </div>
+        <button id="sendBtn">Отправить</button>
+    </form>
+    <table>
+        <tr>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Пол</th>
+            <th>Наличия автомобиля</th>
+        </tr>
+        <tr>
+            <td id="userName"></td>
+            <td id="userLastName"></td>
+            <td id="userGender"></td>
+            <td id="isAuto"></td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
